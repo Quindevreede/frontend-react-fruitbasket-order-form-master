@@ -147,7 +147,8 @@ function App() {
                     />
                     <label htmlFor="agree-field">Ik ga akkoord met de voorwaarden</label>
                 </section>
-                <Button type="submit">Verzend</Button>
+                <Button                     disabled={formState.agreeTerms === false}
+                                            type="submit">Verzend</Button>
             </form>
         </>
     );
